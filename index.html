@@ -102,7 +102,6 @@
 
       socket.on('chat message', (msg) => {
         const item = document.createElement('li');
-        // TODO: Remove this
         item.textContent = nameOutput;
         item.textContent += ' ' + msg;
         messages.appendChild(item);
