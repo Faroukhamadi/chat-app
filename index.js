@@ -18,9 +18,6 @@ io.on('connection', (socket) => {
     io.emit('send nickname', nickname);
     console.log("We're in the nickname event emitter: ", nickname);
   });
-  // socket.on('disconnect', () => {
-  //   console.log('user disconnected');
-  // });
 });
 
 server.listen(3000, () => {
